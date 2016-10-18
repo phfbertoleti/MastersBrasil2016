@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>.:: Masters Brasil 2016 - Interface Web ::.</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type='text/javascript' src='mosquitto.js'></script>
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<script type="text/javascript">
+</script>
+</head>
+<body>
+	<center>
+	<table border = 0 width="100%">
+		<tr>
+			<td bgcolor = "#00A2E8" >
+				<center><font color =white><b>Masters Brasil 2016 - Interface Web</b></font><br></center><br><br>
+				<font color =white>Autor: Pedro Bertoleti</font><br>												
+			</td>
+		</tr>		
+	</table>
+	
+	
+<div id="broker">
+	<h2>Servidor / broker:</h2>
+	<input class="but" id="connect-button" type="button" value="Conectar">
+	<input class="but" id="disconnect-button" type="button" value="Desconectar">
+</div>
+<div id="publish">
+	<h2>Dados da conexão MQTT:</h2>
+	<p>Tópico de recepção de informações: <input class="txt" id="pub-subscribe-text" type="text" value="MQTTMasterBrasilEnvia" disabled="disabled"></p>
+	<p>Tópico de publicação de informações: <input class="txt" id="pub-topic-text" type="text" value="MQTTMasterBrasilRecebe"  disabled="disabled"></p>
+	<br>
+		
+	<h2>Ações:</h2>
+	
+	<table width='100%' border = 0> 
+	<tr>		
+		<th width='33%'><input class="but" id="publish-reset_consumo" type="button"         value="  Reseta/zera consumo acumulado   "><br>
+		<th  width='33%'><input class="but" id="publish-inicia-calibracao" type="button"         value="        Inicia calibração         "><br>
+		<th width='33%'><input class="but" id="publish-finaliza-calibracao" type="button"         value="       Finaliza calibração        ">
+	</tr>
+
+	</table>
+	<br><br>
+</div>
+
+<div id="status_io"></div>
+
+<p><b>Debug da conexão MQTT:</b></p>
+<div id="debug"></div>
+    
+	<script src="tmo.js" type="text/javascript"></script>
+	</center>
+</body>
+</html>
