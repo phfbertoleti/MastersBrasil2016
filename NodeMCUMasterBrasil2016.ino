@@ -81,8 +81,8 @@ char SolicitacaoPICEntraCalibracao[]={0x02, OPCODE_ENTRA_EM_CALIBRACAO, 0x00, 0x
 char SolicitacaoPICSaiCalibracao[]=  {0x02, OPCODE_SAI_DA_CALIBRACAO, 0x00, 0x00};
 
 // WIFI
-const char* SSID = "PedroBertoleti"; // SSID da Rede
-const char* PASSWORD = "rcp990ssd"; // Senha da Rede
+const char* SSID = " "; // SSID da Rede
+const char* PASSWORD = " "; // Senha da Rede
  
 // MQTT
 const char* BROKER_MQTT = "iot.eclipse.org"; // IP/URL DO BROKER MQTT
